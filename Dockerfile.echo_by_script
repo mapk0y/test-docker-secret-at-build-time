@@ -1,0 +1,5 @@
+FROM debian
+
+ARG SECRET_STRING
+COPY ./echo-secrets.sh /
+RUN /echo-secrets.sh
