@@ -4,13 +4,12 @@ pool:
   vmImage: 'Ubuntu 16.04' # Other options: 'macOS 10.13', 'VS2017-Win2016'
 
 variables:
+  TESTENV: 'TESTENV'
 
 steps:
   - script: |
       make test-all
     displayName: running test
-
-
 
 # Multi OS?
 # https://docs.microsoft.com/ja-jp/azure/devops/pipelines/agents/hosted?view=vsts&tabs=yaml
